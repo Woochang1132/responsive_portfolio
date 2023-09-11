@@ -131,7 +131,18 @@ button:focus{
     padding: 5rem 1rem;
     padding-top: 7rem;
     text-align: center;
+    transition: all 300ms ease;
 }
+
+/* 
+.home--middleDark{
+    opacity: 0.5;
+}
+
+.home--dark{
+    opacity: 0.2;
+} 
+*/
 
 .home__avatar{
     width: 250px;
