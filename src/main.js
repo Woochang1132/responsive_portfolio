@@ -1,3 +1,5 @@
+'use strict';
+
 /* 솔루션 전 직접 활용한 코드
 const header = document.querySelector('.header');
 
