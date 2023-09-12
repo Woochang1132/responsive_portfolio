@@ -5,6 +5,7 @@
 const categories = document.querySelector('.categories');
 const projects = document.querySelectorAll('.project');
 const projectContainer = document.querySelector('.projects');
+const active = document.querySelector('.category--selected');
 
 categories.addEventListener('click', (event) => {
     const filter = event.target.dataset.category;
@@ -15,21 +16,18 @@ categories.addEventListener('click', (event) => {
     filterProjects(filter);
 });
 
+
+ // Active 메뉴 재설정
 function handleAtvieSelection(target){
-    // Active 메뉴 재설정
-    const active = document.querySelector('.category--selected');
     active.classList.remove('category--selected');
-    target.target.classList.add('category--selected');
+    target.classList.add('category--selected');
 }
 
+// 프로젝트 필터링
 function filterProjects(filter){
-        // 프로젝트 필터링
-    //console.log("filter >>> ", filter)
    projectContainer.classList.add('anim-out');
 
    projects.forEach(project => {
-       //console.log("project >>>> ", project.dataset.type);
-
        if(filter === 'all' || filter === project.dataset.type){
            project.style.display = 'block';
        }else{
