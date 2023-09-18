@@ -5,9 +5,11 @@
 const categories = document.querySelector('.categories');
 const projects = document.querySelectorAll('.project');
 const projectContainer = document.querySelector('.projects');
-const active = document.querySelector('.category--selected');
+
 
 categories.addEventListener('click', (event) => {
+   
+
     const filter = event.target.dataset.category;
     if(filter == null){
         return;
@@ -19,6 +21,8 @@ categories.addEventListener('click', (event) => {
 
  // Active 메뉴 재설정
 function handleAtvieSelection(target){
+    const active = document.querySelector('.category--selected');
+
     active.classList.remove('category--selected');
     target.classList.add('category--selected');
 }
