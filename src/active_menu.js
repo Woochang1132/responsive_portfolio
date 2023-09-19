@@ -44,8 +44,6 @@ function observerCallback(entries){
         entry.intersectionRatio >= 0.95;
     
     });
-    console.log("visibleSections >> ", visibleSections);
-    console.log("무조건 라스트 selectLastone", selectLastOne);
 
     const navIndex = selectLastOne ? sectionIds.length - 1 
     : findFirstIntersecting(visibleSections); 

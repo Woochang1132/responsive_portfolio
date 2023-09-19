@@ -20,9 +20,14 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/969fbded2e.js" crossorigin="anonymous"></script>
+
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
     <script type="module" src="./src/main.js" defer></script>
     <script type="module" src="./src/projects.js" defer></script>
     <script type="module" src="./src/active_menu.js" defer></script>
+    <script type="module" src="./src/type.js" defer></script>
 </head>
 
 <body>
@@ -52,8 +57,9 @@
             <section id="home">
                 <div class="home__container">
                     <img class="home__avatar" src="./images/man.png" alt="woochang's profile">
-                    <h2 class="home__title">Hello <br /> I&#39;m 
-                        <strong class="home__title--strong">Dream Coder</strong></h2>
+                    <h2 class="home__title" aria-label="Hello, I'm Dream Coder Woochang">Hello <br /> I&#39;m 
+                        <strong class="home__title--strong">Dream Coder</strong>
+                    </h2>
                     <p class="home__description">프론트 개발자 => HTML,CSS,JavaScript,React</p>
                     <a class="home__contact" href="#contact">Contact me</a>
                 </div>
@@ -169,6 +175,7 @@
                         </section>
                     </div>
                 </div>
+                    
             </section>
             <!-- Work -->
             <section id="work" class="section">
