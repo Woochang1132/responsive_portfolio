@@ -192,9 +192,9 @@ button:focus{
 */
 
 .home__avatar{
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    object-fit: none;
     border-radius: 100%;
     border: 3px solid var(--color-accent)
 }
@@ -268,7 +268,7 @@ button:focus{
 .job{
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 16px;
     margin-bottom: 1rem;
 }
 .job__name{
