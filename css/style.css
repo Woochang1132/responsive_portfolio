@@ -489,7 +489,7 @@ button:focus{
     height: 150px;
     border-radius: 100%;
     object-fit: contain;
-    background-color: floralwhite;
+    background-color: whitesmoke;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 }
 .testimonial__list > li{
