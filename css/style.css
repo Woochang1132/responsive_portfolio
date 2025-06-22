@@ -440,6 +440,13 @@ button:focus {
   height: 200px;
 }
 
+.project-name {
+  color: var(--color-accent);
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-shadow: 0 0 5px rgba(3, 233, 249, 0.3);
+}
+
 .project__metadata {
   position: absolute;
   top: 0;
