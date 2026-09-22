@@ -12,9 +12,22 @@
             href="https://github.com/Woochang1132/"
             target="_blank"
             rel="noopener"
-            title="my github link"
+            title="GitHub 프로필 열기"
+            aria-label="GitHub 프로필 열기 (새 탭)"
           >
-            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            class="contact__link"
+            href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=show4031132%40gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Gmail로 이메일 작성"
+            aria-label="Gmail로 이메일 작성 (새 탭)"
+          >
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
           </a>
         </li>
       </ul>
