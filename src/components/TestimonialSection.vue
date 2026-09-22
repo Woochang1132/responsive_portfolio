@@ -1,4 +1,4 @@
-﻿<script setup lang="ts">
+<script setup lang="ts">
 const experiences = [
   {
     id: 'anchor-live',
@@ -96,6 +96,7 @@ const formatDate = (date: string) => date.replaceAll('-', '.');
     aria-labelledby="experience-title"
   >
     <header class="experience__header">
+      <p class="eyebrow">04 / EXPERIENCE</p>
       <h2 id="experience-title" class="title">Experience</h2>
       <p class="description experience__description">
         프로젝트로 쌓아온 프론트엔드 개발 경험
@@ -150,7 +151,7 @@ const formatDate = (date: string) => date.replaceAll('-', '.');
 }
 
 .experience__description {
-  color: #626b79;
+  color: var(--color-muted);
   font-size: 1.05rem;
   line-height: 1.7;
   word-break: keep-all;
@@ -178,7 +179,7 @@ const formatDate = (date: string) => date.replaceAll('-', '.');
   bottom: -2rem;
   left: 10rem;
   width: 1px;
-  background: #dce5e9;
+  background: var(--color-border);
 }
 
 .experience__item::after {
@@ -188,10 +189,10 @@ const formatDate = (date: string) => date.replaceAll('-', '.');
   left: calc(10rem - 4px);
   width: 9px;
   height: 9px;
-  border: 2px solid #087d87;
+  border: 2px solid var(--color-accent-ink);
   border-radius: 50%;
   background: var(--color-white);
-  box-shadow: 0 0 0 5px #eefafb;
+  box-shadow: 0 0 0 5px var(--color-accent-soft);
 }
 
 .experience__item:last-child {
@@ -207,7 +208,7 @@ const formatDate = (date: string) => date.replaceAll('-', '.');
   flex-direction: column;
   align-items: flex-start;
   padding-top: 1.6rem;
-  color: #596473;
+  color: var(--color-muted);
   font-size: 0.85rem;
   font-weight: 600;
   font-variant-numeric: tabular-nums;
@@ -222,10 +223,10 @@ const formatDate = (date: string) => date.replaceAll('-', '.');
 .experience__card {
   min-width: 0;
   padding: 1.75rem 2rem;
-  border: 1px solid #e1e7ec;
-  border-radius: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
   background: var(--color-white);
-  box-shadow: 0 4px 20px rgb(5 10 19 / 4%);
+  box-shadow: var(--shadow-card);
 }
 
 .experience__name {
@@ -238,7 +239,7 @@ const formatDate = (date: string) => date.replaceAll('-', '.');
 
 .experience__summary {
   margin-top: 0.35rem;
-  color: #596473;
+  color: var(--color-muted);
   font-size: 0.95rem;
   line-height: 1.6;
   word-break: keep-all;
@@ -254,10 +255,10 @@ const formatDate = (date: string) => date.replaceAll('-', '.');
 
 .experience__tags li {
   padding: 0.25rem 0.65rem;
-  border: 1px solid #d1ecef;
+  border: 1px solid var(--color-border);
   border-radius: 6px;
-  background: #effafb;
-  color: #096b74;
+  background: var(--color-accent-soft);
+  color: var(--color-accent-ink);
   font-size: 0.75rem;
   font-weight: 600;
   line-height: 1.5;
@@ -289,7 +290,7 @@ const formatDate = (date: string) => date.replaceAll('-', '.');
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #14838d;
+  background: var(--color-accent-ink);
 }
 
 @media (max-width: 768px) {

@@ -40,14 +40,18 @@ function selectCategory(key: CategoryKey) {
 <template>
   <section id="work" class="section">
     <div class="max-container">
-      <h2 class="title">My work</h2>
-      <p class="description">Projects</p>
+      <header class="section-heading">
+        <p class="eyebrow">03 / PROJECTS</p>
+        <h2 class="title">코드로 만든 경험들</h2>
+        <p class="description">직접 구현하고 개선해 온 프로젝트를 소개합니다.</p>
+      </header>
 
       <ul class="categories">
         <li v-for="category in categories" :key="category.key" :class="`category__${category.key}`">
           <button
             class="category"
             :class="{ 'category--selected': selected === category.key }"
+            :aria-pressed="selected === category.key"
             @click="selectCategory(category.key)"
           >
             {{ category.label }}
@@ -59,6 +63,7 @@ function selectCategory(key: CategoryKey) {
       <ul class="projects" :class="{ 'anim-out': isAnimating }">
         <ProjectCard v-for="project in filteredProjects" :key="project.id" :project="project" />
       </ul>
+      <p v-if="filteredProjects.length === 0" class="projects__empty" role="status">이 분류에는 아직 등록된 프로젝트가 없습니다.</p>
     </div>
   </section>
 </template>

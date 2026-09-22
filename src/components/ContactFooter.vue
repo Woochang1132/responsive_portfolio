@@ -3,8 +3,9 @@
 <template>
   <footer id="contact" class="section">
     <div class="max-container">
-      <h2 class="title">Let's talk</h2>
-      <p class="description">show4031132@gmail.com</p>
+      <p class="eyebrow">05 / CONTACT</p>
+      <h2 class="title">함께 만들 다음 경험.<br /><span>Let's talk.</span></h2>
+      <p class="description"><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=show4031132%40gmail.com" target="_blank" rel="noopener noreferrer">show4031132@gmail.com <span aria-hidden="true">↗</span></a></p>
       <ul class="contact__links">
         <li>
           <a
@@ -31,7 +32,7 @@
           </a>
         </li>
       </ul>
-      <p>@Choi,Woochang - All rights reserve</p>
+      <p>© Choi Woochang. All rights reserved.</p>
     </div>
   </footer>
 </template>

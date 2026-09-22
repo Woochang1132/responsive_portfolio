@@ -6,8 +6,11 @@ import { skills } from '@/data/skills'
 <template>
   <section id="skills" class="section">
     <div class="max-container">
-      <h2 class="title">My Skills</h2>
-      <p class="description">Skills & Attributes</p>
+      <header class="section-heading">
+        <p class="eyebrow">02 / TOOLKIT</p>
+        <h2 class="title">아이디어를 구현하는 기술</h2>
+        <p class="description">인터페이스부터 데이터 연동까지, 개발에 사용하는 도구들입니다.</p>
+      </header>
 
       <div class="skills">
         <section class="skills__coding">

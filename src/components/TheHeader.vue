@@ -2,7 +2,6 @@
 import { ref } from 'vue'
 
 import { useHeaderScroll } from '@/composables/useHeaderScroll'
-import { asset } from '@/utils/asset'
 
 defineProps<{
   activeId: string
@@ -33,11 +32,11 @@ function closeMenu() {
 <template>
   <header class="header" :class="{ 'header--dark': isDark }">
     <div class="header__logo">
-      <img class="header__logo__img" :src="asset('images/gifts.png')" alt="logo" />
+      <span class="header__monogram" aria-hidden="true">W.</span>
       <h1 class="header__logo__title"><a href="#">Woochang</a></h1>
     </div>
     <nav class="header__nav">
-      <ul class="header__menu" :class="{ open: isMenuOpen }" @click="closeMenu">
+      <ul id="main-menu" class="header__menu" :class="{ open: isMenuOpen }" @click="closeMenu">
         <li v-for="item in menuItems" :key="item.id">
           <a
             class="header__menu__item"
@@ -47,7 +46,7 @@ function closeMenu() {
         </li>
       </ul>
     </nav>
-    <button class="header__toggle" aria-label="navigation menu toggle" @click="toggleMenu">
+    <button class="header__toggle" aria-label="메뉴 열기 / 닫기" :aria-expanded="isMenuOpen" aria-controls="main-menu" @click="toggleMenu">
       <i class="fa-solid fa-bars"></i>
     </button>
   </header>
