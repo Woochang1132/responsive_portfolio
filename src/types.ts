@@ -4,7 +4,13 @@ export interface Project {
   id: number
   title: string
   description: string
-  href: string
+  href?: string
+  detail?: {
+    overview: string
+    role: string
+    document: string
+    features: { title: string; description: string; image: string; page: number }[]
+  }
   image: string
   alt: string
   category: ProjectCategory

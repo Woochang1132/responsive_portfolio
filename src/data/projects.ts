@@ -2,6 +2,25 @@ import type { Project } from '@/types'
 
 export const projects: Project[] = [
   {
+    id: 9,
+    title: '앵커라이브 2.0',
+    description: '증권방송 플랫폼 개발 및 운영',
+    image: 'images/projects/anchorlive/drawing.webp',
+    alt: '앵커라이브 증권방송 화면과 판서 도구',
+    category: 'front-end',
+    detail: {
+      overview: '방송자가 증권 차트를 공유하며 설명하고, 시청자가 실시간으로 방송을 보며 채팅에 참여하는 증권방송 플랫폼입니다.',
+      role: '프론트엔드 개발 참여',
+      document: 'documents/anchorlive-2-guide.pdf',
+      features: [
+        { title: '방송 준비와 화면 공유', description: '방송 개설부터 장치 설정, 공유할 화면 선택까지 방송을 시작하는 흐름을 제공합니다.', image: 'images/projects/anchorlive/screen-sharing.webp', page: 10 },
+        { title: '차트 설명을 위한 방송 도구', description: '그리기·지우개 도구로 차트를 설명하고, PiP 화면과 크기 설정으로 방송 화면을 구성합니다.', image: 'images/projects/anchorlive/drawing.webp', page: 13 },
+        { title: '실시간 소통과 참여자 관리', description: '공지, 귓속말, 접속자 목록과 강제 퇴장 기능으로 방송 중 소통과 참여자 관리를 지원합니다.', image: 'images/projects/anchorlive/participants.webp', page: 20 },
+        { title: 'PC와 모바일 시청', description: '시청자는 재생·음량·화질·전체 화면을 조절하고, 모바일에서는 채팅 영역을 열고 닫으며 방송을 시청합니다.', image: 'images/projects/anchorlive/mobile.webp', page: 25 },
+      ],
+    },
+  },
+  {
     id: 1,
     title: 'Project #1',
     description: "Woochang's portfolio",
