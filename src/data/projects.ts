@@ -21,6 +21,32 @@ export const projects: Project[] = [
     },
   },
   {
+    id: 10,
+    title: 'onTune · Kubernetes 기능 확장',
+    description: '기존 모니터링 제품의 일부 기능 확장 개발 참여',
+    category: 'front-end',
+    label: 'FRONT-END · 부분 참여',
+    actionLabel: '참여 내용 보기',
+    cover: {
+      eyebrow: 'CONTRIBUTION / KUBERNETES',
+      title: 'onTune',
+      caption: '기존 제품 기반의 기능 확장',
+    },
+    detail: {
+      overview: '기존 onTune 제품의 Kubernetes 영역에 대한 추가 확장 개발 프로젝트에 참여했습니다. 베트남 개발사와 협업하며 프론트엔드 일부 작업을 담당했습니다.',
+      role: '프론트엔드 일부 확장 개발 참여',
+      facts: [{ label: '협업 형태', value: '베트남 개발사와 공동 프로젝트 참여' }],
+      officialUrl: 'https://ontune.co.kr/',
+      // 직접 담당한 기능과 공개 가능한 해결 사례가 확정되면 아래 내용을 보완합니다.
+      sections: [
+        { title: '프로젝트 배경', description: '기존 모니터링 제품을 기반으로 Kubernetes 영역의 기능을 추가 확장하는 프로젝트입니다.' },
+        { title: '참여 범위', description: '기존 디자인과 기술을 바탕으로 프론트엔드 일부 확장 작업에 참여했습니다. 제품 전체가 아닌 프로젝트 내 일부 작업을 담당했습니다.' },
+        { title: '협업 환경', description: '베트남 개발사와 함께 진행한 프로젝트에 참여하여, 기존 제품을 기반으로 확장 개발을 수행했습니다.' },
+      ],
+      notice: '본 소개는 기존 제품을 기반으로 수행한 개인의 참여 범위를 설명합니다. 제품 화면과 소스코드는 수록하지 않습니다.',
+    },
+  },
+  {
     id: 1,
     title: 'Project #1',
     description: "Woochang's portfolio",

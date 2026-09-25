@@ -5,14 +5,21 @@ export interface Project {
   title: string
   description: string
   href?: string
+  cover?: { eyebrow: string; title: string; caption: string }
+  label?: string
+  actionLabel?: string
   detail?: {
     overview: string
     role: string
-    document: string
-    features: { title: string; description: string; image: string; page: number }[]
+    document?: string
+    officialUrl?: string
+    facts?: { label: string; value: string }[]
+    sections?: { title: string; description: string }[]
+    notice?: string
+    features?: { title: string; description: string; image: string; page: number }[]
   }
-  image: string
-  alt: string
+  image?: string
+  alt?: string
   category: ProjectCategory
 }
 
