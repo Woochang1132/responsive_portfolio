@@ -13,6 +13,9 @@ export interface Project {
     role: string
     document?: string
     officialUrl?: string
+    officialLabel?: string
+    officialNote?: string
+    sectionsTitle?: string
     facts?: { label: string; value: string }[]
     sections?: { title: string; description: string }[]
     notice?: string

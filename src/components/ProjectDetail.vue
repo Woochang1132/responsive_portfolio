@@ -41,11 +41,11 @@ defineExpose({ open })
       </dl>
       <a v-if="project.detail.document" class="project-detail__document" :href="asset(project.detail.document)" target="_blank" rel="noopener">화면·기능 설명서 PDF 보기 <span aria-hidden="true">↗</span><span class="sr-only"> (새 탭)</span></a>
       <div v-if="project.detail.officialUrl">
-        <a class="project-detail__document" :href="project.detail.officialUrl" target="_blank" rel="noopener">공식 제품 소개 <span aria-hidden="true">↗</span><span class="sr-only"> (새 탭)</span></a>
-        <p class="project-detail__note">제품 전반을 소개하는 공식 사이트입니다. 개인의 구현 범위를 나타내는 링크가 아닙니다.</p>
+        <a class="project-detail__document" :href="project.detail.officialUrl" target="_blank" rel="noopener">{{ project.detail.officialLabel ?? '공식 제품 소개' }} <span aria-hidden="true">↗</span><span class="sr-only"> (새 탭)</span></a>
+        <p class="project-detail__note">{{ project.detail.officialNote ?? '제품 전반을 소개하는 공식 사이트입니다. 개인의 구현 범위를 나타내는 링크가 아닙니다.' }}</p>
       </div>
       <section v-if="project.detail.sections?.length" class="project-detail__contribution" aria-label="참여 내용">
-        <h3>참여 내용</h3>
+        <h3>{{ project.detail.sectionsTitle ?? '참여 내용' }}</h3>
         <section v-for="(section, index) in project.detail.sections" :key="section.title" class="project-detail__entry">
           <span class="project-detail__number" aria-hidden="true">0{{ index + 1 }}</span>
           <div><h4>{{ section.title }}</h4><p>{{ section.description }}</p></div>
