@@ -111,6 +111,33 @@ export const projects: Project[] = [
     },
   },
   {
+    id: 6,
+    title: 'Mate 화상회의',
+    description: '모바일 1:1 화상 상담 개발 및 카메라 미디어 획득 로직 개선',
+    category: 'front-end',
+    label: 'FRONT-END · 모바일 화상 상담',
+    actionLabel: '담당 작업 보기',
+    cover: {
+      eyebrow: 'MOBILE / VIDEO CONSULTATION',
+      title: 'Mate',
+      caption: '1:1 화상 상담 · 상담 상태 UI · 카메라 스트림',
+    },
+    detail: {
+      overview: 'Mate 화상회의 프로젝트에서 모바일 전용 1:1 화상 상담 기능을 개발했습니다. 상담사와 학생 간 영상 연결, 상담 상태에 따른 UI 구현과 다양한 모바일 기기의 카메라 초기 스트림 획득 로직 개선을 담당했습니다.',
+      role: '모바일 화상 상담 프론트엔드 개발',
+      facts: [
+        { label: '이용 대상', value: '상담사 · 학생' },
+        { label: '개발 환경', value: '모바일 전용 1:1 화상 상담' },
+        { label: '주요 작업', value: '영상 연결 · 상담 상태 UI · 전·후면 카메라 미디어 획득' },
+      ],
+      sectionsTitle: '담당 작업',
+      sections: [
+        { title: '모바일 1:1 화상 상담 및 상태별 UI', description: '모바일 전용 1:1 화상 상담 기능을 개발했습니다. 상담사·학생 간 영상 연결과 상담 입장·진행·종료 상태에 따른 UI를 구현했습니다.' },
+        { title: '전·후면 카메라 초기 스트림 획득 개선', description: '다양한 모바일 기기에서 전·후면 카메라의 초기 스트림을 확보하기 위한 미디어 획득 로직을 개선했습니다.' },
+      ],
+    },
+  },
+  {
     id: 1,
     title: 'Project #1',
     description: "Woochang's portfolio",
@@ -154,14 +181,5 @@ export const projects: Project[] = [
     image: 'images/projects/Meet_project.jpg',
     alt: 'conference_project',
     category: 'back-end',
-  },
-  {
-    id: 6,
-    title: 'Project #6',
-    description: 'softbridge - Mate conference_project',
-    href: 'https://mateme.co.kr/demo/nton',
-    image: 'images/projects/Mate_project.jpg',
-    alt: 'conference_project',
-    category: 'front-end',
   },
 ]
