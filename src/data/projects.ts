@@ -1,4 +1,4 @@
-import type { Project } from '@/types'
+import type { Project } from '@/types';
 
 export const projects: Project[] = [
   {
@@ -9,14 +9,39 @@ export const projects: Project[] = [
     alt: '앵커라이브 증권방송 화면과 판서 도구',
     category: 'front-end',
     detail: {
-      overview: '방송자가 증권 차트를 공유하며 설명하고, 시청자가 실시간으로 방송을 보며 채팅에 참여하는 증권방송 플랫폼입니다.',
+      overview:
+        '방송자가 증권 차트를 공유하며 설명하고, 시청자가 실시간으로 방송을 보며 채팅에 참여하는 증권방송 플랫폼입니다.',
       role: '프론트엔드 개발 참여',
       document: 'documents/anchorlive-2-guide.pdf',
       features: [
-        { title: '방송 준비와 화면 공유', description: '방송 개설부터 장치 설정, 공유할 화면 선택까지 방송을 시작하는 흐름을 제공합니다.', image: 'images/projects/anchorlive/screen-sharing.webp', page: 10 },
-        { title: '차트 설명을 위한 방송 도구', description: '그리기·지우개 도구로 차트를 설명하고, PiP 화면과 크기 설정으로 방송 화면을 구성합니다.', image: 'images/projects/anchorlive/drawing.webp', page: 13 },
-        { title: '실시간 소통과 참여자 관리', description: '공지, 귓속말, 접속자 목록과 강제 퇴장 기능으로 방송 중 소통과 참여자 관리를 지원합니다.', image: 'images/projects/anchorlive/participants.webp', page: 20 },
-        { title: 'PC와 모바일 시청', description: '시청자는 재생·음량·화질·전체 화면을 조절하고, 모바일에서는 채팅 영역을 열고 닫으며 방송을 시청합니다.', image: 'images/projects/anchorlive/mobile.webp', page: 25 },
+        {
+          title: '방송 준비와 화면 공유',
+          description:
+            '방송 개설부터 장치 설정, 공유할 화면 선택까지 방송을 시작하는 흐름을 제공합니다.',
+          image: 'images/projects/anchorlive/screen-sharing.webp',
+          page: 10,
+        },
+        {
+          title: '차트 설명을 위한 방송 도구',
+          description:
+            '그리기·지우개 도구로 차트를 설명하고, PiP 화면과 크기 설정으로 방송 화면을 구성합니다.',
+          image: 'images/projects/anchorlive/drawing.webp',
+          page: 13,
+        },
+        {
+          title: '실시간 소통과 참여자 관리',
+          description:
+            '공지, 귓속말, 접속자 목록과 강제 퇴장 기능으로 방송 중 소통과 참여자 관리를 지원합니다.',
+          image: 'images/projects/anchorlive/participants.webp',
+          page: 20,
+        },
+        {
+          title: 'PC와 모바일 시청',
+          description:
+            '시청자는 재생·음량·화질·전체 화면을 조절하고, 모바일에서는 채팅 영역을 열고 닫으며 방송을 시청합니다.',
+          image: 'images/projects/anchorlive/mobile.webp',
+          page: 25,
+        },
       ],
     },
   },
@@ -33,17 +58,33 @@ export const projects: Project[] = [
       caption: '기존 제품 기반의 기능 확장',
     },
     detail: {
-      overview: '기존 onTune 제품의 Kubernetes 영역에 대한 추가 확장 개발 프로젝트에 참여했습니다. 베트남 개발사와 협업하며 프론트엔드 일부 작업을 담당했습니다.',
+      overview:
+        '기존 onTune 제품의 Kubernetes 영역에 대한 추가 확장 개발 프로젝트에 참여했습니다. 베트남 개발사와 협업하며 프론트엔드 일부 작업을 담당했습니다.',
       role: '프론트엔드 일부 확장 개발 참여',
-      facts: [{ label: '협업 형태', value: '베트남 개발사와 공동 프로젝트 참여' }],
+      facts: [
+        { label: '협업 형태', value: '베트남 개발사와 공동 프로젝트 참여' },
+      ],
       officialUrl: 'https://ontune.co.kr/',
       // 직접 담당한 기능과 공개 가능한 해결 사례가 확정되면 아래 내용을 보완합니다.
       sections: [
-        { title: '프로젝트 배경', description: '기존 모니터링 제품을 기반으로 Kubernetes 영역의 기능을 추가 확장하는 프로젝트입니다.' },
-        { title: '참여 범위', description: '기존 디자인과 기술을 바탕으로 프론트엔드 일부 확장 작업에 참여했습니다. 제품 전체가 아닌 프로젝트 내 일부 작업을 담당했습니다.' },
-        { title: '협업 환경', description: '베트남 개발사와 함께 진행한 프로젝트에 참여하여, 기존 제품을 기반으로 확장 개발을 수행했습니다.' },
+        {
+          title: '프로젝트 배경',
+          description:
+            '기존 모니터링 제품을 기반으로 Kubernetes 영역의 기능을 추가 확장하는 프로젝트입니다.',
+        },
+        {
+          title: '참여 범위',
+          description:
+            '기존 디자인과 기술을 바탕으로 프론트엔드 일부 확장 작업에 참여했습니다. 제품 전체가 아닌 프로젝트 내 일부 작업을 담당했습니다.',
+        },
+        {
+          title: '협업 환경',
+          description:
+            '베트남 개발사와 함께 진행한 프로젝트에 참여하여, 기존 제품을 기반으로 확장 개발을 수행했습니다.',
+        },
       ],
-      notice: '본 소개는 기존 제품을 기반으로 수행한 개인의 참여 범위를 설명합니다. 제품 화면과 소스코드는 수록하지 않습니다.',
+      notice:
+        '본 소개는 기존 제품을 기반으로 수행한 개인의 참여 범위를 설명합니다. 제품 화면과 소스코드는 수록하지 않습니다.',
     },
   },
   {
@@ -59,25 +100,58 @@ export const projects: Project[] = [
       caption: '회원 · 상품 · 주문 · 배송 · 운영 관리',
     },
     detail: {
-      overview: '리만코리아 글로벌 백오피스 시스템 전면 개편 프로젝트에 참여했습니다. 공식몰에서 발생한 요청을 처리하고 운영자가 관리 업무를 수행하는 백오피스 화면과 기능을 Vue.js 및 Quasar 기반으로 개발했습니다.',
+      overview:
+        '리만코리아 글로벌 백오피스 시스템 전면 개편 프로젝트에 참여했습니다. 공식몰에서 발생한 요청을 처리하고 운영자가 관리 업무를 수행하는 백오피스 화면과 기능을 Vue.js 및 Quasar 기반으로 개발했습니다.',
       role: '백오피스 프론트엔드 화면·기능 개발',
       facts: [
         { label: '사용 기술', value: 'Vue.js · Quasar' },
-        { label: '개발 범위', value: '회원 · 감사 로그 · 상품 · 주문 · 배송 · 배너·팝업' },
+        {
+          label: '개발 범위',
+          value: '회원 · 감사 로그 · 상품 · 주문 · 배송 · 배너·팝업',
+        },
         { label: '주요 작업', value: '관리자 UI 구현 및 API 연동' },
       ],
       officialUrl: 'https://kr.riman.com/',
       officialLabel: '리만코리아 공식몰 보기',
-      officialNote: '공식몰은 서비스 이해를 위한 참고 링크입니다. 담당 개발 범위는 공식몰의 요청을 처리하는 백오피스 관리자 화면과 기능입니다.',
+      officialNote:
+        '공식몰은 서비스 이해를 위한 참고 링크입니다. 담당 개발 범위는 공식몰의 요청을 처리하는 백오피스 관리자 화면과 기능입니다.',
       sectionsTitle: '담당 작업',
       sections: [
-        { title: 'Vue.js · Quasar 기반 백오피스 개발', description: '쇼핑몰 백오피스 시스템 전면 개편에 참여하여 Vue.js 및 Quasar 기반의 관리자 화면과 기능을 개발했습니다.' },
-        { title: '회원 검색·조회 및 등급 변경', description: '회원 검색, 조건별 필터, 상세 정보 조회 화면을 구현하고 회원 등급 변경 API를 연동했습니다.' },
-        { title: '관리자 작업 감사 로그', description: '회원 승급·삭제 등 관리자 주요 작업에 대한 감사 로그 조회 화면을 구현했습니다. 작업 이력을 통해 변경 내역을 추적할 수 있도록 지원했습니다.' },
-        { title: '상품 정보와 이미지 등록', description: '상품 관리 UI를 구현하고 화장품 이미지 업로드와 가격·수량 등 상품 정보 입력·등록 기능을 개발했습니다.' },
-        { title: '주문 조회 및 상태 변경', description: '주문 목록·상세 정보 조회 화면과 고객 1:1 문의에 따른 관리자 주문 상태 변경 기능을 개발했습니다.' },
-        { title: '배송 상태 조회 및 운송장 등록', description: '배송 상태 조회 화면을 구현하고 배송 대상별 운송장 번호 입력·등록 API를 연동했습니다.' },
-        { title: '배너·팝업 운영 관리', description: '배너·팝업 관리 UI를 구현하고 이미지 업로드, 연결 URL 입력, 노출 여부·기간 설정 기능을 개발했습니다.' },
+        {
+          title: 'Vue.js · Quasar 기반 백오피스 개발',
+          description:
+            '쇼핑몰 백오피스 시스템 전면 개편에 참여하여 Vue.js 및 Quasar 기반의 관리자 화면과 기능을 개발했습니다.',
+        },
+        {
+          title: '회원 검색·조회 및 등급 변경',
+          description:
+            '회원 검색, 조건별 필터, 상세 정보 조회 화면을 구현하고 회원 등급 변경 API를 연동했습니다.',
+        },
+        {
+          title: '관리자 작업 감사 로그',
+          description:
+            '회원 승급·삭제 등 관리자 주요 작업에 대한 감사 로그 조회 화면을 구현했습니다. 작업 이력을 통해 변경 내역을 추적할 수 있도록 지원했습니다.',
+        },
+        {
+          title: '상품 정보와 이미지 등록',
+          description:
+            '상품 관리 UI를 구현하고 화장품 이미지 업로드와 가격·수량 등 상품 정보 입력·등록 기능을 개발했습니다.',
+        },
+        {
+          title: '주문 조회 및 상태 변경',
+          description:
+            '주문 목록·상세 정보 조회 화면과 고객 1:1 문의에 따른 관리자 주문 상태 변경 기능을 개발했습니다.',
+        },
+        {
+          title: '배송 상태 조회 및 운송장 등록',
+          description:
+            '배송 상태 조회 화면을 구현하고 배송 대상별 운송장 번호 입력·등록 API를 연동했습니다.',
+        },
+        {
+          title: '배너·팝업 운영 관리',
+          description:
+            '배너·팝업 관리 UI를 구현하고 이미지 업로드, 연결 URL 입력, 노출 여부·기간 설정 기능을 개발했습니다.',
+        },
       ],
     },
   },
@@ -94,20 +168,38 @@ export const projects: Project[] = [
       caption: '영상 업로드 · 스트리밍 · 학습 진척도',
     },
     detail: {
-      overview: '리만코리아 직원 교육을 위한 아카데미 서비스의 프론트엔드 개발에 참여했습니다. 교육팀의 영상 업로드와 학습 현황 확인, 수강자의 스트리밍 재생을 위한 화면과 기능을 구현했습니다.',
+      overview:
+        '리만코리아 직원 교육을 위한 아카데미 서비스의 프론트엔드 개발에 참여했습니다. 교육팀의 영상 업로드와 학습 현황 확인, 수강자의 스트리밍 재생을 위한 화면과 기능을 구현했습니다.',
       role: '교육 서비스 프론트엔드 화면·기능 개발',
       facts: [
         { label: '서비스 대상', value: '리만코리아 교육팀 및 수강 직원' },
         { label: '사용 기술', value: 'HLS.js · Chart.js' },
-        { label: '주요 작업', value: '영상 업로드 · 스트리밍 재생 · 재생 오류 대응 · 진척도 API 연동 및 차트 UI' },
+        {
+          label: '주요 작업',
+          value:
+            '영상 업로드 · 스트리밍 재생 · 재생 오류 대응 · 진척도 API 연동 및 차트 UI',
+        },
       ],
       sectionsTitle: '담당 작업',
       sections: [
-        { title: '교육 영상 업로드 및 스트리밍 재생', description: '교육팀의 교육 영상 업로드 UI와 HLS.js를 활용한 수강자용 스트리밍 재생 기능을 구현했습니다.' },
-        { title: '영상 로딩·재생 오류 대응', description: '영상 로딩·재생 오류 처리 및 재시도 로직을 구현해 수강 중 재생 중단에 대응했습니다.' },
-        { title: '회원별 학습 진척도 시각화', description: '회원별 교육 진척도 조회 API를 연동하고, Chart.js를 활용해 교육팀이 회원별 학습 진행 현황을 확인할 수 있는 차트 UI를 구현했습니다.' },
+        {
+          title: '교육 영상 업로드 및 스트리밍 재생',
+          description:
+            '교육팀의 교육 영상 업로드 UI와 HLS.js를 활용한 수강자용 스트리밍 재생 기능을 구현했습니다.',
+        },
+        {
+          title: '영상 로딩·재생 오류 대응',
+          description:
+            '영상 로딩·재생 오류 처리 및 재시도 로직을 구현해 수강 중 재생 중단에 대응했습니다.',
+        },
+        {
+          title: '회원별 학습 진척도 시각화',
+          description:
+            '회원별 교육 진척도 조회 API를 연동하고, Chart.js를 활용해 교육팀이 회원별 학습 진행 현황을 확인할 수 있는 차트 UI를 구현했습니다.',
+        },
       ],
-      notice: '직원 대상 교육 서비스로, 서비스 접속 URL과 내부 화면은 공개하지 않습니다.',
+      notice:
+        '직원 대상 교육 서비스로, 서비스 접속 URL과 내부 화면은 공개하지 않습니다.',
     },
   },
   {
@@ -123,17 +215,29 @@ export const projects: Project[] = [
       caption: '1:1 화상 상담 · 상담 상태 UI · 카메라 스트림',
     },
     detail: {
-      overview: 'Mate 화상회의 프로젝트에서 모바일 전용 1:1 화상 상담 기능을 개발했습니다. 상담사와 학생 간 영상 연결, 상담 상태에 따른 UI 구현과 다양한 모바일 기기의 카메라 초기 스트림 획득 로직 개선을 담당했습니다.',
+      overview:
+        'Mate 화상회의 프로젝트에서 모바일 전용 1:1 화상 상담 기능을 개발했습니다. 상담사와 학생 간 영상 연결, 상담 상태에 따른 UI 구현과 다양한 모바일 기기의 카메라 초기 스트림 획득 로직 개선을 담당했습니다.',
       role: '모바일 화상 상담 프론트엔드 개발',
       facts: [
         { label: '이용 대상', value: '상담사 · 학생' },
         { label: '개발 환경', value: '모바일 전용 1:1 화상 상담' },
-        { label: '주요 작업', value: '영상 연결 · 상담 상태 UI · 전·후면 카메라 미디어 획득' },
+        {
+          label: '주요 작업',
+          value: '영상 연결 · 상담 상태 UI · 전·후면 카메라 미디어 획득',
+        },
       ],
       sectionsTitle: '담당 작업',
       sections: [
-        { title: '모바일 1:1 화상 상담 및 상태별 UI', description: '모바일 전용 1:1 화상 상담 기능을 개발했습니다. 상담사·학생 간 영상 연결과 상담 입장·진행·종료 상태에 따른 UI를 구현했습니다.' },
-        { title: '전·후면 카메라 초기 스트림 획득 개선', description: '다양한 모바일 기기에서 전·후면 카메라의 초기 스트림을 확보하기 위한 미디어 획득 로직을 개선했습니다.' },
+        {
+          title: '모바일 1:1 화상 상담 및 상태별 UI',
+          description:
+            '모바일 전용 1:1 화상 상담 기능을 개발했습니다. 상담사·학생 간 영상 연결과 상담 입장·진행·종료 상태에 따른 UI를 구현했습니다.',
+        },
+        {
+          title: '전·후면 카메라 초기 스트림 획득 개선',
+          description:
+            '다양한 모바일 기기에서 전·후면 카메라의 초기 스트림을 확보하기 위한 미디어 획득 로직을 개선했습니다.',
+        },
       ],
     },
   },
@@ -150,18 +254,37 @@ export const projects: Project[] = [
       caption: '실시간 화상회의 · 가상 배경 · 실시간 자막',
     },
     detail: {
-      overview: 'LGU+ 화상회의 서비스 플랫폼 Meet U 개발에 참여했습니다. Janus 기반 WebRTC 영상 연결과 참가자별 스트림 상태 관리, 가상 배경 합성 및 실시간 자막 표시 기능을 구현했습니다.',
+      overview:
+        'LGU+ 화상회의 서비스 플랫폼 Meet U 개발에 참여했습니다. Janus 기반 WebRTC 영상 연결과 참가자별 스트림 상태 관리, 가상 배경 합성 및 실시간 자막 표시 기능을 구현했습니다.',
       role: '화상회의 프론트엔드 화면·기능 개발',
       facts: [
         { label: '참여 기간', value: '2022.01.17 – 2023.01.31' },
-        { label: '사용 기술', value: 'WebRTC · Janus · MediaPipe · Canvas · Web Speech API' },
-        { label: '주요 작업', value: '미디어·스트림 관리 · 가상 배경 합성 · 음성 인식 및 자막' },
+        {
+          label: '사용 기술',
+          value: 'WebRTC · Janus · MediaPipe · Canvas · Web Speech API',
+        },
+        {
+          label: '주요 작업',
+          value: '미디어·스트림 관리 · 가상 배경 합성 · 음성 인식 및 자막',
+        },
       ],
       sectionsTitle: '담당 작업',
       sections: [
-        { title: 'Janus 기반 WebRTC 화상회의 개발', description: '카메라·마이크 미디어 획득과 스트림 송출·수신 기능을 개발했습니다. 참가자 입·퇴장에 따른 영상 UI와 스트림 상태를 관리했습니다.' },
-        { title: '인물 분리 및 가상 배경 합성', description: 'MediaPipe로 카메라 영상의 인물과 배경을 분리하고, Canvas로 인물 영상과 가상 배경을 합성하는 기능을 구현했습니다.' },
-        { title: '음성 인식 및 실시간 자막', description: 'Web Speech API 기반 음성 인식과 화상회의 실시간 자막 표시 기능을 구현했습니다.' },
+        {
+          title: 'Janus 기반 WebRTC 화상회의 개발',
+          description:
+            '카메라·마이크 미디어 획득과 스트림 송출·수신 기능을 개발했습니다. 참가자 입·퇴장에 따른 영상 UI와 스트림 상태를 관리했습니다.',
+        },
+        {
+          title: '인물 분리 및 가상 배경 합성',
+          description:
+            'MediaPipe로 카메라 영상의 인물과 배경을 분리하고, Canvas로 인물 영상과 가상 배경을 합성하는 기능을 구현했습니다.',
+        },
+        {
+          title: '음성 인식 및 실시간 자막',
+          description:
+            'Web Speech API 기반 음성 인식과 화상회의 실시간 자막 표시 기능을 구현했습니다.',
+        },
       ],
     },
   },
@@ -175,7 +298,8 @@ export const projects: Project[] = [
     label: 'PERSONAL PROJECT · REACT',
     actionLabel: '개발 내용 보기',
     detail: {
-      overview: 'React를 활용해 혼자 진행한 개인 프로젝트입니다. 화면 개발과 YouTube API 연동을 수행하고, Netlify에 배포하여 접속 가능한 웹 서비스로 구성했습니다.',
+      overview:
+        'React를 활용해 혼자 진행한 개인 프로젝트입니다. 화면 개발과 YouTube API 연동을 수행하고, Netlify에 배포하여 접속 가능한 웹 서비스로 구성했습니다.',
       role: '프론트엔드 개발 · API 연동 · 배포',
       facts: [
         { label: '프로젝트 유형', value: '개인 프로젝트 · 단독 개발' },
@@ -187,9 +311,21 @@ export const projects: Project[] = [
       officialNote: '개인 프로젝트를 Netlify에 배포한 사이트입니다.',
       sectionsTitle: '개발 내용',
       sections: [
-        { title: 'React 기반 화면 개발', description: 'React를 활용해 프로젝트의 프론트엔드 화면을 직접 개발했습니다.' },
-        { title: 'YouTube API 연동', description: 'YouTube API를 연동하여 영상 데이터를 화면에 표시하는 기능을 구현했습니다.' },
-        { title: 'Netlify 배포', description: '개발한 프로젝트를 Netlify에 배포하여 웹에서 접속할 수 있도록 구성했습니다.' },
+        {
+          title: 'React 기반 화면 개발',
+          description:
+            'React를 활용해 프로젝트의 프론트엔드 화면을 직접 개발했습니다.',
+        },
+        {
+          title: 'YouTube API 연동',
+          description:
+            'YouTube API를 연동하여 영상 데이터를 화면에 표시하는 기능을 구현했습니다.',
+        },
+        {
+          title: 'Netlify 배포',
+          description:
+            '개발한 프로젝트를 Netlify에 배포하여 웹에서 접속할 수 있도록 구성했습니다.',
+        },
       ],
     },
   },
@@ -203,7 +339,8 @@ export const projects: Project[] = [
     label: 'PERSONAL PROJECT · REACT',
     actionLabel: '개발 내용 보기',
     detail: {
-      overview: 'React를 활용해 쇼핑몰을 구성한 개인 프로젝트입니다. 장바구니와 상품 등록, 상품 수량·가격 설정 등 쇼핑몰 운영에 필요한 주요 기능을 구현했습니다.',
+      overview:
+        'React를 활용해 쇼핑몰을 구성한 개인 프로젝트입니다. 장바구니와 상품 등록, 상품 수량·가격 설정 등 쇼핑몰 운영에 필요한 주요 기능을 구현했습니다.',
       role: '쇼핑몰 프론트엔드 화면·기능 개발',
       facts: [
         { label: '프로젝트 유형', value: '개인 프로젝트' },
@@ -212,22 +349,65 @@ export const projects: Project[] = [
       ],
       officialUrl: 'https://github.com/Woochang1132/shoppy',
       officialLabel: 'GitHub 소스 보기',
-      officialNote: '배포 서비스의 무료 이용 기간이 종료되어, 현재는 GitHub 소스로 구현 내용을 확인할 수 있습니다.',
+      officialNote:
+        '배포 서비스의 무료 이용 기간이 종료되어, 현재는 GitHub 소스로 구현 내용을 확인할 수 있습니다.',
       sectionsTitle: '개발 내용',
       sections: [
-        { title: 'React 기반 쇼핑몰 화면 개발', description: 'React를 활용해 쇼핑몰 화면과 주요 기능을 구현했습니다.' },
-        { title: '장바구니 기능', description: '구매할 상품을 장바구니에 담아 관리할 수 있는 기능을 구현했습니다.' },
-        { title: '상품 등록 및 수량·가격 설정', description: '상품을 등록하고 상품 수량과 가격을 설정할 수 있는 화면과 기능을 구현했습니다.' },
+        {
+          title: 'React 기반 쇼핑몰 화면 개발',
+          description: 'React를 활용해 쇼핑몰 화면과 주요 기능을 구현했습니다.',
+        },
+        {
+          title: '장바구니 기능',
+          description:
+            '구매할 상품을 장바구니에 담아 관리할 수 있는 기능을 구현했습니다.',
+        },
+        {
+          title: '상품 등록 및 수량·가격 설정',
+          description:
+            '상품을 등록하고 상품 수량과 가격을 설정할 수 있는 화면과 기능을 구현했습니다.',
+        },
       ],
     },
   },
   {
     id: 4,
-    title: 'Project #4',
-    description: 'TypeScript - motion',
-    href: 'https://github.com/Woochang1132/motion',
+    title: 'Motion · TypeScript 객체지향',
+    description: '개인 프로젝트 · 객체지향 개념을 코드로 구현하는 학습',
     image: 'images/projects/motion_project.png',
-    alt: 'motion_project',
+    alt: 'TypeScript와 HTML·CSS로 구현한 Motion 개인 프로젝트 화면',
     category: 'front-end',
+    label: 'PERSONAL PROJECT · TYPESCRIPT',
+    actionLabel: '개발 내용 보기',
+    detail: {
+      overview:
+        'TypeScript, HTML, CSS를 활용해 만든 개인 프로젝트입니다. TypeScript의 객체지향 개념을 실제 코드로 구현하며 연습하기 위해 Motion을 개발했습니다.',
+      role: '개인 프로젝트 화면·기능 개발',
+      facts: [
+        { label: '프로젝트 유형', value: '개인 학습 프로젝트' },
+        { label: '사용 기술', value: 'TypeScript · HTML · CSS' },
+        {
+          label: '학습 목적',
+          value: 'TypeScript 기반 객체지향 프로그래밍 연습',
+        },
+      ],
+      officialUrl: 'https://github.com/Woochang1132/motion',
+      officialLabel: 'GitHub 소스 보기',
+      officialNote:
+        '별도의 배포 사이트 없이 GitHub 소스로 구현 내용을 확인할 수 있습니다.',
+      sectionsTitle: '개발 및 학습 내용',
+      sections: [
+        {
+          title: 'TypeScript 객체지향 구현 연습',
+          description:
+            '객체지향 개념을 TypeScript 코드로 직접 구현하며 학습하는 데 목적을 두고 프로젝트를 진행했습니다.',
+        },
+        {
+          title: 'HTML·CSS 기반 화면 구성',
+          description:
+            'HTML과 CSS로 프로젝트 화면을 구성하고, TypeScript로 화면에서 동작하는 기능을 구현했습니다.',
+        },
+      ],
+    },
   },
-]
+];
