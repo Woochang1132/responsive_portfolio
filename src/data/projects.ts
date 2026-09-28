@@ -138,6 +138,34 @@ export const projects: Project[] = [
     },
   },
   {
+    id: 5,
+    title: 'Meet U',
+    description: '화상회의 서비스 플랫폼 · LGU+',
+    category: 'front-end',
+    label: 'FRONT-END · WEBRTC / JANUS',
+    actionLabel: '담당 작업 보기',
+    cover: {
+      eyebrow: 'VIDEO CONFERENCE / LGU+',
+      title: 'Meet U',
+      caption: '실시간 화상회의 · 가상 배경 · 실시간 자막',
+    },
+    detail: {
+      overview: 'LGU+ 화상회의 서비스 플랫폼 Meet U 개발에 참여했습니다. Janus 기반 WebRTC 영상 연결과 참가자별 스트림 상태 관리, 가상 배경 합성 및 실시간 자막 표시 기능을 구현했습니다.',
+      role: '화상회의 프론트엔드 화면·기능 개발',
+      facts: [
+        { label: '참여 기간', value: '2022.01.17 – 2023.01.31' },
+        { label: '사용 기술', value: 'WebRTC · Janus · MediaPipe · Canvas · Web Speech API' },
+        { label: '주요 작업', value: '미디어·스트림 관리 · 가상 배경 합성 · 음성 인식 및 자막' },
+      ],
+      sectionsTitle: '담당 작업',
+      sections: [
+        { title: 'Janus 기반 WebRTC 화상회의 개발', description: '카메라·마이크 미디어 획득과 스트림 송출·수신 기능을 개발했습니다. 참가자 입·퇴장에 따른 영상 UI와 스트림 상태를 관리했습니다.' },
+        { title: '인물 분리 및 가상 배경 합성', description: 'MediaPipe로 카메라 영상의 인물과 배경을 분리하고, Canvas로 인물 영상과 가상 배경을 합성하는 기능을 구현했습니다.' },
+        { title: '음성 인식 및 실시간 자막', description: 'Web Speech API 기반 음성 인식과 화상회의 실시간 자막 표시 기능을 구현했습니다.' },
+      ],
+    },
+  },
+  {
     id: 1,
     title: 'Project #1',
     description: "Woochang's portfolio",
@@ -172,14 +200,5 @@ export const projects: Project[] = [
     image: 'images/projects/motion_project.png',
     alt: 'motion_project',
     category: 'front-end',
-  },
-  {
-    id: 5,
-    title: 'Project #5',
-    description: 'LGU+ - conference_project',
-    href: 'https://meet.uplus.co.kr/login',
-    image: 'images/projects/Meet_project.jpg',
-    alt: 'conference_project',
-    category: 'back-end',
   },
 ]
