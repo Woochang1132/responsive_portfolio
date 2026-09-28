@@ -166,15 +166,6 @@ export const projects: Project[] = [
     },
   },
   {
-    id: 1,
-    title: 'Project #1',
-    description: "Woochang's portfolio",
-    href: 'https://my-portfolio-woochang.netlify.app',
-    image: 'images/projects/portfolio_project.png',
-    alt: 'portfolio_project',
-    category: 'front-end',
-  },
-  {
     id: 2,
     title: 'Project #2',
     description: 'YoutubeApi - project',
