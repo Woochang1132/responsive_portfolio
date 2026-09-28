@@ -82,6 +82,35 @@ export const projects: Project[] = [
     },
   },
   {
+    id: 7,
+    title: '리만코리아 아카데미',
+    description: '교육 영상 업로드·스트리밍 및 학습 진척도 UI 개발',
+    category: 'front-end',
+    label: 'FRONT-END · HLS.JS / CHART.JS',
+    actionLabel: '담당 작업 보기',
+    cover: {
+      eyebrow: 'ACADEMY / EMPLOYEE EDUCATION',
+      title: 'RIMAN Academy',
+      caption: '영상 업로드 · 스트리밍 · 학습 진척도',
+    },
+    detail: {
+      overview: '리만코리아 직원 교육을 위한 아카데미 서비스의 프론트엔드 개발에 참여했습니다. 교육팀의 영상 업로드와 학습 현황 확인, 수강자의 스트리밍 재생을 위한 화면과 기능을 구현했습니다.',
+      role: '교육 서비스 프론트엔드 화면·기능 개발',
+      facts: [
+        { label: '서비스 대상', value: '리만코리아 교육팀 및 수강 직원' },
+        { label: '사용 기술', value: 'HLS.js · Chart.js' },
+        { label: '주요 작업', value: '영상 업로드 · 스트리밍 재생 · 재생 오류 대응 · 진척도 API 연동 및 차트 UI' },
+      ],
+      sectionsTitle: '담당 작업',
+      sections: [
+        { title: '교육 영상 업로드 및 스트리밍 재생', description: '교육팀의 교육 영상 업로드 UI와 HLS.js를 활용한 수강자용 스트리밍 재생 기능을 구현했습니다.' },
+        { title: '영상 로딩·재생 오류 대응', description: '영상 로딩·재생 오류 처리 및 재시도 로직을 구현해 수강 중 재생 중단에 대응했습니다.' },
+        { title: '회원별 학습 진척도 시각화', description: '회원별 교육 진척도 조회 API를 연동하고, Chart.js를 활용해 교육팀이 회원별 학습 진행 현황을 확인할 수 있는 차트 UI를 구현했습니다.' },
+      ],
+      notice: '직원 대상 교육 서비스로, 서비스 접속 URL과 내부 화면은 공개하지 않습니다.',
+    },
+  },
+  {
     id: 1,
     title: 'Project #1',
     description: "Woochang's portfolio",
@@ -133,15 +162,6 @@ export const projects: Project[] = [
     href: 'https://mateme.co.kr/demo/nton',
     image: 'images/projects/Mate_project.jpg',
     alt: 'conference_project',
-    category: 'front-end',
-  },
-  {
-    id: 7,
-    title: 'Project #7',
-    description: 'Riman - academy_project',
-    href: 'https://academy.riman.com/login',
-    image: 'images/projects/academy_project.jpg',
-    alt: 'academy_project',
     category: 'front-end',
   },
 ]
