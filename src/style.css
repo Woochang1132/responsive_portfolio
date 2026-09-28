@@ -205,7 +205,12 @@ a:focus-visible, button:focus-visible { outline: 3px solid #528e7e; outline-offs
 }
 
 /* Project archive */
-.project__open { display: block; width: 100%; height: 100%; padding: 0; text-align: left; border-radius: inherit; }
+.project--detail { container-type: inline-size; align-self: stretch; }
+.project__open { display: flex; flex-direction: column; width: 100%; height: 100%; padding: 0; text-align: left; border-radius: inherit; }
+.project__open > .project__img, .project__text-cover { flex-shrink: 0; width: 100%; }
+.project__open .project__summary { display: flex; flex-direction: column; flex: 1; width: 100%; }
+.project__open .project__summary > p { margin-bottom: 1.2rem; }
+.project__open .project__action { margin-top: auto; }
 .project__open .project__img { aspect-ratio: 16 / 9; border-radius: 13px 13px 0 0; object-fit: cover; }
 .project__summary { padding: 1.4rem; }
 .project__label { display: block; margin-bottom: 0.6rem; font-size: 0.65rem; letter-spacing: 0.08em; color: var(--color-accent); }
@@ -238,12 +243,14 @@ a:focus-visible, button:focus-visible { outline: 3px solid #528e7e; outline-offs
 .projects { align-items: start; }
 
 /* Text-only contribution projects */
-.project__text-cover { display: flex; flex-direction: column; justify-content: center; aspect-ratio: 16 / 9; padding: 1.5rem; border-radius: 13px 13px 0 0; background: linear-gradient(135deg, #304d53, #1c333c); border-bottom: 1px solid var(--color-dark-border); }
+.project__text-cover { display: flex; flex-direction: column; justify-content: center; aspect-ratio: 16 / 9; min-height: 12rem; padding: 1.5rem; border-radius: 13px 13px 0 0; background: linear-gradient(135deg, #304d53, #1c333c); border-bottom: 1px solid var(--color-dark-border); }
 .project__text-cover > span { color: var(--color-accent); font-size: 0.6rem; letter-spacing: 0.12em; }
-.project__text-cover strong { margin-block: 0.35rem; color: var(--color-text); font-size: clamp(2rem, 4vw, 3rem); font-weight: 600; letter-spacing: -0.04em; }
+.project__text-cover strong { margin-block: 0.75rem; color: var(--color-text); font-size: clamp(0.875rem, 9cqw, 3rem); line-height: 1.25; white-space: nowrap; font-weight: 600; letter-spacing: -0.04em; }
 .project__text-cover small { color: var(--color-dark-muted); font-size: 0.8rem; }
 .project-detail__contribution { margin-top: 2.5rem; }
 .project-detail__entry { display: flex; gap: 1rem; padding-block: 1.5rem; border-bottom: 1px solid var(--color-border); }
 .project-detail__entry h4 { margin: 0 0 0.5rem; font-size: 1rem; }
 .project-detail__entry p { color: var(--color-muted); font-size: 0.9rem; word-break: keep-all; overflow-wrap: anywhere; }
 .project-detail__notice { margin-top: 1.5rem; padding: 1rem 1.25rem; border-left: 3px solid var(--color-accent-ink); background: #eaf0e8; color: var(--color-muted); font-size: 0.8rem; }
+
+

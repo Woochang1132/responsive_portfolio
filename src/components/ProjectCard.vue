@@ -12,7 +12,7 @@ defineProps<{
 </script>
 
 <template>
-  <li class="project">
+  <li class="project" :class="{ 'project--detail': project.detail }">
     <button
       v-if="project.detail"
       class="project__open"
